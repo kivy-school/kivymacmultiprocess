@@ -17,6 +17,7 @@ a = Analysis(
 pyz = PYZ(a.pure)
 
     #*[Tree(p) for p in (sdl2.dep_bins + glew.dep_bins)],
+
 exe = EXE(
     pyz,
     a.scripts,
@@ -40,7 +41,7 @@ exe = EXE(
 
 app= BUNDLE(
     exe, 
-    name = 'Hello Multiprocessing Mac test',
+    name = 'Hello Multiprocessing Mac test.app',
     icon = None,
-    bundle_identifier=None
+    bundle_identifier=None,
 )
